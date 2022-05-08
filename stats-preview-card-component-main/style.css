@@ -15,8 +15,8 @@ body {
 .container {
     display: flex;
     margin: 200px auto;
-    height: auto;
-    width: 60%;
+    height: 450px;
+    width: 1115px;
     
 }
 
@@ -38,7 +38,8 @@ h1, .list {
     color: hsla(0, 0%, 100%, 0.75);
     margin-bottom: 30px;
     font-family: 'Inter', sans-serif;
-    line-height: 2;   
+    line-height: 2;
+    font-size: 14px;   
 }
 
 .container .card-left {
