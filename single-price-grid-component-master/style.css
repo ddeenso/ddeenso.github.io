@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 663px;
+    height: auto;
+    margin: 25vh auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 8px;      
+}
+
+.container .top-card {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    padding: 40px 40px;
+    justify-content: flex-start;
+}
+
+.container .top-card .title1 {
+    color: hsl(179, 62%, 43%);
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 20px;
+}
+
+.container .top-card .title2 {
+    color: hsl(71, 73%, 54%);
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container .top-card p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.7;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.container .bottom-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+    
+}
+
+.container .bottom-card .left {
+    background: hsl(179, 62%, 43%);
+    width: 50%;
+    padding: 20px 40px;
+    border-radius: 0px 0px 0px 8px;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+}
+
+.container .bottom-card .left h2 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.container .bottom-card .left .dollar .price {
+    font-size: 30px;
+}
+
+.container .bottom-card .left .dollar .period {
+    font-size: 15px;
+    color: hsl(199, 50%, 85%);
+    line-height: 2.5;
+}
+
+.container .bottom-card .left .dollar {
+    margin-bottom: 15px;
+}
+
+.container .bottom-card .left .descr {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.container .bottom-card .right {
+    background-color: #4ABEBD;
+    width: 50%;
+    padding: 20px 40px;
+    border-radius: 0px 0px 8px 0px;
+    color: #fff;
+    
+}
+
+.container .bottom-card .left .btn {
+    background-color: hsl(71, 73%, 54%);
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .bottom-card .right h2 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: 'Karla', sans-serif;
+}
+.container .bottom-card .right .skills {
+    color: hsl(180, 74%, 76%);
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+}    
+
+@media screen and (max-width: 520px) {
+    .container {
+        max-width: 70%;
+        max-height: auto;
+    }
+    .container .bottom-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;      
+    }
+    .container .bottom-card .left {    
+        min-width: 100%;
+        border-radius: 0px;
+    }
+    .container .bottom-card .right {
+        min-width: 100%;
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .container {
+        max-width: 95%;
+        max-height: auto;
+    }
+    .container .bottom-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;      
+    }
+    .container .bottom-card .left {    
+        min-width: 100%;
+        border-radius: 0px;
+    }
+    .container .bottom-card .right {
+        min-width: 100%;
+        border-radius: 0px 0px 8px 8px;
+    }
+}
