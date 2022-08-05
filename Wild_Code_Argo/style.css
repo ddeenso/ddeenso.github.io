@@ -5,7 +5,7 @@ body{
   font-family: 'Roboto', sans-serif;
   background-color: #e5e5e5;
   overflow: hidden;
-  height: 100vh;
+  height: auto;
   background-image: url(backchallenge.png);
   background-repeat: no-repeat;
   background-size: 48%;
