@@ -29,13 +29,14 @@ let formValidation = () => {
 
 let data = [];
 
+
 let acceptData = () => {
   data.push({
     text: textInput.value,
     description: textarea.value,
   });
 
-  localStorage.setItem("data", JSON.stringify(data));
+  sessionStorage.setItem("data", JSON.stringify(data));
 
   console.log(data);
   createArgos();
@@ -68,7 +69,7 @@ let resetForm = () => {
 let deleteArgo = (e) => {
   e.parentElement.parentElement.remove();
   data.splice(e.parentElement.parentElement.id, 1);
-  localStorage.setItem("data", JSON.stringify(data));
+  sessionStorage.setItem("data", JSON.stringify(data));
   console.log(data);
 };
 
@@ -82,7 +83,7 @@ let editArgo = (e) => {
 };
 
 (() => {
-  data = JSON.parse(localStorage.getItem("data")) || [];
+  data = JSON.parse(sessionStorage.getItem("data")) || [];
   console.log(data);
   createArgos();
 })();
